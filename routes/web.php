@@ -18,5 +18,3 @@ use App\Http\Controllers\UsuarioController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/usuarios', [UsuarioController::class, 'index']);
-Route::get('/usuarios/{id}', [UsuarioController::class, 'show']);
